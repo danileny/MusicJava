@@ -17,7 +17,7 @@ public class MusicTest1 {
         }        
     }
 
-    public static void main(String[] args) throws Exception, BadException {
+    public static void main(String[] args) throws Exception {
         MusicTest1 mt = new MusicTest1();
         mt.play();    
 
