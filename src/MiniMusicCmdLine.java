@@ -10,7 +10,7 @@ public class MiniMusicCmdLine {
         
         MiniMusicCmdLine mini = new MiniMusicCmdLine();
         if (args.length < 2) {
-            System.out.println("Please give 2 integer arguments");
+            System.out.println("Please give 2 integer arguments"); //Launch from cmd
         } else {
             int instrument = Integer.parseInt(args[0]);
             int note = Integer.parseInt(args[1]);
