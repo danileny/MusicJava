@@ -1,5 +1,7 @@
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
@@ -25,6 +27,17 @@ public class Boxer implements Serializable {
         ObjectOutputStream os = new ObjectOutputStream(fs);
         os.writeObject(myBox);
         os.close();
+
+        FileInputStream fileStream = new FileInputStream("foo.ser");
+        ObjectInputStream osi = new ObjectInputStream(fileStream);
+
+        try {
+            Object one = osi.readObject();
+        } catch (ClassNotFoundException e) {            
+            e.printStackTrace();
+        }
+
+        osi.close();        
 
     }
 }
