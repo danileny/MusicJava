@@ -1,4 +1,6 @@
-public class GameCharacter {
+import java.io.*;
+
+public class GameCharacter implements Serializable{
     int power;
     String type;
     String[] weapons;
