@@ -3,7 +3,7 @@ import javax.swing.*;
 import javax.sound.midi.*;
 import java.util.*;
 import java.awt.event.*;
-
+//lala
 public class BeatBox {
     JPanel mainPanel;
     ArrayList<JCheckBox> checkboxList;
