@@ -1,4 +1,5 @@
 ## Getting Started
 
-Something from HeadFirst
+Something from HeadFirst.
+Code from different chapters.
 
