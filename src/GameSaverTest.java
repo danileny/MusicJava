@@ -1,8 +1,4 @@
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class GameSaverTest {
 
@@ -31,13 +27,17 @@ public class GameSaverTest {
             GameCharacter oneRestore = (GameCharacter) is.readObject();
             GameCharacter twoRestore = (GameCharacter) is.readObject();
             GameCharacter threeRestore = (GameCharacter) is.readObject();
+            
 
             System.out.println("One's type: " + oneRestore.getType());
             System.out.println("Two's type: " + twoRestore.getType());
             System.out.println("Three's type: " + threeRestore.getType());
+            is.close();
+
         } 
         catch (Exception ex) {
             ex.printStackTrace();
         }
+        
     }
 }
