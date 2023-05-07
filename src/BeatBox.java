@@ -211,8 +211,8 @@ public class BeatBox {
                 FileInputStream fileIn = new FileInputStream(new File("Checkbox.ser"));
                 ObjectInputStream is = new ObjectInputStream(fileIn);
                 checkBoxState = (boolean[]) is.readObject();
-            } catch (Exception e) {
-                e.printStackTrace();
+            } catch (Exception ex) {
+                ex.printStackTrace();
             }
             
             for (int i = 0; i < 256; i++) {
